@@ -1,0 +1,10 @@
+github:
+  url: https://api.github.com
+  accept.header: application/vnd.github.v3+json
+  page.size: 100
+
+cache:
+  organization: Netflix
+  endpoints: /, /orgs/${cache.organization}, /orgs/${cache.organization}/members, /orgs/${cache.organization}/repos
+  view.source.endpoint: /orgs/${cache.organization}/repos
+  refresh.sec: 300
